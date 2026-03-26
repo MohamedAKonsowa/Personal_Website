@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Konsowa · AI & ML Engineer</title>
+  <meta name="description" content="Personal portfolio and blog of Mohamed Konsowa — AI & Machine Learning Engineer specializing in deep learning, NLP, and multimodal AI systems." />
+  <meta property="og:title" content="Mohamed Konsowa · AI & ML Engineer" />
+  <meta property="og:description" content="AI Research Engineer building cutting-edge deep learning, NLP, and multimodal AI systems." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">MK<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+<li><a href="#resume">Resume</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="home" class="hero glass section-fade">
+    <div class="hero-bg-overlay"></div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-visual">
+        <img src="me.jpeg" class="hero-profile" alt="Mohamed Konsowa">
+      </div>
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">
+          <span class="name-first">Mohamed</span>
+          <span class="name-last">Konsowa</span>
+        </h1>
+        <p class="hero-title">AI &amp; Machine Learning Engineer</p>
+        <p class="hero-sub">
+          Building intelligent systems at the intersection of deep learning, NLP,
+          and multimodal AI · University of Louisville &middot; GPA 3.94
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i data-lucide="rocket"></i> View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i data-lucide="send"></i> Get in Touch
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/MohamedAKonsowa" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="github.png" class="social-icon" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/in/mohamed-konsowa-947709261" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="linkedin.png" class="social-icon" alt="LinkedIn">
+          </a>
+          <a href="mailto:mkonma647@gmail.com" aria-label="Email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+    <div class="hero-scroll-cue">
+      <i data-lucide="chevrons-down"></i>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about" class="section about-section glass">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm an <strong>AI &amp; Machine Learning Engineer</strong> with 1+ years of hands-on research experience in deep learning, NLP, and multimodal models. Currently pursuing a B.S. in Computer Science &amp; Engineering at the
+            <strong>University of Louisville</strong> (GPA: 3.94), graduating August 2026.
+          </p>
+          <p>
+            My work spans medical AI, anomaly detection, conversational AI, and agentic systems. I love building things that push the boundary of what AI can do — from diagnosing dementia via VR sensor data to creating multi-agent orchestration platforms that write software autonomously.
+          </p>
+          <p>
+            Outside of research, I mentor undergraduate REU students, compete in programming contests, and judge AI olympiads. Based between Louisville, KY and Alexandria, Egypt.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <i data-lucide="graduation-cap"></i>
+              <div>
+                <strong>3.94 GPA</strong>
+                <span>UofL CS&amp;E</span>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <i data-lucide="flask-conical"></i>
+              <div>
+                <strong>1+ Year</strong>
+                <span>AI Research</span>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <i data-lucide="users"></i>
+              <div>
+                <strong>50+</strong>
+                <span>Study Participants</span>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <i data-lucide="trophy"></i>
+              <div>
+                <strong>3 Awards</strong>
+                <span>Competitions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-edu">
+          <div class="edu-card">
+            <div class="edu-icon"><i data-lucide="university"></i></div>
+            <div class="edu-body">
+              <h3>University of Louisville <img src="uofl.png" class="edu-logo" alt="UofL"></h3>
+              <p class="edu-degree">B.S. Computer Science &amp; Engineering</p>
+              <p class="edu-meta">Louisville, KY &middot; Aug 2021 – Aug 2026</p>
+              <span class="gpa-badge">GPA: 3.94</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section id="experience" class="section experience-section glass section-fade">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3>Research Assistant — AI Pipelines <img src="Hive.png" class="exp-logo" alt="HIVE AI"></h3>
+                <p class="tl-org">HIVE AI Innovation Center · University of Louisville</p>
+              </div>
+              <span class="tl-date">Jan 2026 – Present</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Design and implement end-to-end AI pipelines on <strong>Google Cloud Platform (GCP)</strong>, including data ingestion, preprocessing, model training, evaluation, and deployment.</li>
+              <li>Develop scalable and modular ML workflows supporting NLP, computer vision, and multimodal applications.</li>
+              <li>Collaborate with <strong>GE Appliances</strong> as an external industry partner using Agile methodologies, contributing to sprint planning, iterative development, and continuous feedback cycles.</li>
+              <li>Deploy AI services using containerized environments and optimized inference pipelines for production use.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>GCP</span><span>MLOps</span><span>NLP</span><span>Computer Vision</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3>AI Research Intern <img src="Center of Human system eng.png" class="exp-logo" alt="UofL CHSE"></h3>
+                <p class="tl-org">UofL · Center for Human Systems Engineering</p>
+              </div>
+              <span class="tl-date">Jul 2024 – Dec 2025</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Developed a <strong>multimodal VR-based dementia detection system</strong> using BERT, CNNs, and DNNs, achieving <strong>90%+ accuracy</strong> in testing.</li>
+              <li>Boosted model recall by <strong>15%</strong> using Optuna for hyperparameter tuning and ensemble modeling techniques.</li>
+              <li>Collected and analyzed multi-sensor HCI data from <strong>50+ study participants</strong> to drive research insights.</li>
+              <li>Mentored <strong>5 undergraduate REU students</strong>, offering hands-on guidance in ML implementation and debugging.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>BERT</span><span>CNN</span><span>DNN</span><span>VR</span><span>Optuna</span><span>HCI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects" class="section projects-section glass section-fade">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <i data-lucide="brain-circuit"></i>
+            <span class="project-badge">Featured</span>
+          </div>
+          <h3>Agentic Web App Generator<br/><small>DS-STAR Architecture</small></h3>
+          <p>Built an agentic platform leveraging DS-STAR architecture to translate user prompts into functional web applications within a sandboxed environment. Implemented multi-agent orchestration (planning, code generation, execution) with tool integration, enabling safe, automated software creation with minimal human intervention.</p>
+          <div class="project-tags">
+            <span>Multi-Agent</span><span>LLM</span><span>RAG</span><span>Sandbox</span>
+          </div>
+          <a href="https://geappliances-ai-tool-prototype.onrender.com" target="_blank" rel="noopener" class="project-link">
+            <i data-lucide="external-link"></i> Live Demo
+          </a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <i data-lucide="file-search"></i>
+          </div>
+          <h3>RagyVerse</h3>
+          <p>AI-powered knowledge platform with PDF ingestion, semantic search, and conversational retrieval using FastAPI, LangChain, FAISS, and Hugging Face.</p>
+          <div class="project-tags">
+            <span>FastAPI</span><span>LangChain</span><span>FAISS</span><span>RAG</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <i data-lucide="eye"></i>
+          </div>
+          <h3>AMD Detection (Capstone)</h3>
+          <p>Trained a ResNet50 on retinal images to detect Age-related Macular Degeneration; improved precision by 15% through advanced tuning techniques.</p>
+          <div class="project-tags">
+            <span>ResNet50</span><span>PyTorch</span><span>Medical AI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <i data-lucide="shield-alert"></i>
+          </div>
+          <h3>Scylla — AI Anomaly Detection</h3>
+          <p>Built VAE-LSTM and VAE-CNN models for log and metric anomaly detection; deployed in a fully Dockerized pipeline for production monitoring.</p>
+          <div class="project-tags">
+            <span>VAE-LSTM</span><span>VAE-CNN</span><span>Docker</span><span>MLOps</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <i data-lucide="car"></i>
+          </div>
+          <h3>Driver Gaze Prediction &amp; Scoring</h3>
+          <p>Eye-tracking-based driving assessment system that predicts optimal gaze targets from scene context and scores novice drivers by measuring attention alignment over time.</p>
+          <div class="project-tags">
+            <span>Computer Vision</span><span>Eye Tracking</span><span>Scoring</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <i data-lucide="mic"></i>
+          </div>
+          <h3>Multimodal Dementia Detection</h3>
+          <p>Flask-based dementia classifier combining audio speech features and BERT-based NLP embeddings for early clinical screening.</p>
+          <div class="project-tags">
+            <span>BERT</span><span>Audio ML</span><span>Flask</span><span>NLP</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <i data-lucide="map"></i>
+          </div>
+          <h3>Job Roadmap Generator</h3>
+          <p>Used RAG and GANs to synthesize tailored career roadmaps and mock interview questions from resumes — personalized at scale.</p>
+          <div class="project-tags">
+            <span>RAG</span><span>GAN</span><span>NLP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills" class="section skills-section glass section-fade">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i data-lucide="code-2"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <span>Python</span><span>Java</span><span>C++</span>
+            <span>JavaScript</span><span>HTML/CSS</span><span>SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i data-lucide="layers"></i>
+            <h3>Libraries &amp; Frameworks</h3>
+          </div>
+          <div class="skill-pills">
+            <span>PyTorch</span><span>TensorFlow</span><span>Hugging Face</span>
+            <span>scikit-learn</span><span>Flask</span><span>Django</span><span>React</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i data-lucide="wrench"></i>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-pills">
+            <span>Git</span><span>Docker</span><span>GCP</span>
+            <span>VS Code</span><span>Unreal Engine</span><span>Jupyter</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i data-lucide="cpu"></i>
+            <h3>AI Domains</h3>
+          </div>
+          <div class="skill-pills">
+            <span>Deep Learning</span><span>NLP</span><span>Computer Vision</span>
+            <span>Multimodal AI</span><span>RAG</span><span>GANs</span>
+            <span>MCP</span><span>AI VR</span><span>Embedded Systems</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── AWARDS ─── -->
+  <section id="awards" class="section awards-section glass section-fade">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Awards &amp; Competitions</h2>
+      </div>
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="award-icon"><i data-lucide="trophy"></i></div>
+          <div class="award-body">
+            <h3>ECPC Finalist</h3>
+            <p>2022 &amp; 2023 — Led my team to the Egyptian Collegiate Programming Contest national finals two consecutive years.</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-icon gold"><i data-lucide="medal"></i></div>
+          <div class="award-body">
+            <h3>2nd Place — AI Hackathon</h3>
+            <p>2024 — Built a PDF Q&amp;A system using Hugging Face Transformers, earning second place at a competitive AI hackathon.</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-icon"><i data-lucide="scale"></i></div>
+          <div class="award-body">
+            <h3>AI Olympiad Judge</h3>
+            <p>2024 — Evaluated vision/NLP projects and embedded system integrations as an official judge at an AI Olympiad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact" class="section contact-section glass section-fade">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-desc">Whether it's a research collaboration, job opportunity, or just a chat about AI — I'd love to hear from you.</p>
+      </div>
+      <div class="contact-cards">
+        <a href="mailto:mkonma647@gmail.com" class="contact-card" id="contact-email">
+          <i data-lucide="mail"></i>
+          <div>
+            <strong>Email</strong>
+            <span>mkonma647@gmail.com</span>
+          </div>
+          <i data-lucide="arrow-right" class="arrow"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohamed-konsowa-947709261" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+          <i data-lucide="linkedin"></i>
+          <div>
+            <strong>LinkedIn</strong>
+            <span>mohamed-konsowa-947709261</span>
+          </div>
+          <i data-lucide="arrow-right" class="arrow"></i>
+        </a>
+        <a href="https://github.com/MohamedAKonsowa" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+          <i data-lucide="github"></i>
+          <div>
+            <strong>GitHub</strong>
+            <span>MohamedAKonsowa</span>
+          </div>
+          <i data-lucide="arrow-right" class="arrow"></i>
+        </a>
+        <div class="contact-card no-link" id="contact-phone">
+          <i data-lucide="phone"></i>
+          <div>
+            <strong>Phone</strong>
+            <span>(502) 546-2608</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="resume" class="section resume-section glass section-fade">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Resume</span>
+      <h2 class="section-title">Download My Resume</h2>
+    </div>
+    <a href="Resume%20(59).pdf" download class="btn btn-primary">Download PDF</a>
+  </div>
+</section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer glass">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">MK<span class="dot">.</span></span>
+        <p>© 2025 Mohamed Konsowa · Built with ❤️ &amp; AI</p>
+        <div class="footer-links">
+          <a href="https://github.com/MohamedAKonsowa" target="_blank" rel="noopener"><img src="github.png" class="social-icon" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/mohamed-konsowa-947709261" target="_blank" rel="noopener"><img src="linkedin.png" class="social-icon" alt="LinkedIn"></a>
+          <a href="mailto:mkonma647@gmail.com"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
